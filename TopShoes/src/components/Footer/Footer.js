@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const FooterContainer = styled.div`
 display: flex;
-height: 47px;
+height: 150px;
 min-width: 800px;
 gap: 10px;
 justify-content: space-between;
@@ -13,6 +13,8 @@ background-color: #f2f2f2;
 
 export const FooterImg = styled.div`
 display:flex;
+height: 30px;
+width: 30px;
 `
 
 export const FooterInfo = styled.div`
