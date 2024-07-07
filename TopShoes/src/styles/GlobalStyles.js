@@ -18,24 +18,21 @@ export const GlobalStyles = createGlobalStyle`
         margin: 0;
         padding: 0;
         background-color: white;
-       
         color: black;
         overflow-x:hidden;
     }
 
     a {
         text-decoration: none;
-        color: black;
-    }
-    a:visited {
         color: white;
     }
+   
     li {
         list-style: none;
     }
     
 
     button:hover{
-        background-color: #fff;
+        background-color: #f2f2f2;
     }
 `;

@@ -8,13 +8,14 @@ gap: 10px;
 justify-content: space-between;
 align-items: center;
 padding: 1rem 18rem;
-background-color: #f2f2f2;
+background-color: black;
+color: white;
 `
 
 export const FooterImg = styled.div`
 display:flex;
-height: 30px;
-width: 30px;
+gap: 5px;
+width: 25px;
 `
 
 export const FooterInfo = styled.div`
