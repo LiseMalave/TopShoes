@@ -3,6 +3,7 @@ import viteLogo from "/vite.svg";
 import Hero from "./components/Hero/Hero";
 import Layout from "./components/Layout/Layout";
 import Navbar from "./components/Navbar/Navbar.jsx";
+import Products from "./components/Products/Products.jsx";
 
 
 function App() {
@@ -12,7 +13,8 @@ function App() {
         <Navbar/>
         <Layout>
 
-          <Hero></Hero>
+          <Hero/>
+          <Products/>
         </Layout>
       
       <h1>Vite + React</h1>

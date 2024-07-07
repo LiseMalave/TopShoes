@@ -21,8 +21,9 @@ export const HeroInfo = styled.div`
 `;
 export const HeroButton = styled.button`
 width: 10em;
-  background-color: var(--orange);
+  background-color: var(--orange-bg);
   border-radius: 10px;
   padding: 5px 1rem;
+  color: white;
   border: none;
 `;
