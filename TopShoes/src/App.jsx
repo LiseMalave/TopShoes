@@ -1,9 +1,10 @@
-import reactLogo from "./assets/react.svg";
+
 import viteLogo from "/vite.svg";
 import Hero from "./components/Hero/Hero";
 import Layout from "./components/Layout/Layout";
 import Navbar from "./components/Navbar/Navbar.jsx";
 import Products from "./components/Products/Products.jsx";
+import Footer from "./components/Footer/Footer.jsx";
 
 
 function App() {
@@ -16,9 +17,9 @@ function App() {
           <Hero/>
           <Products/>
         </Layout>
-      
-      <h1>Vite + React</h1>
-      
+
+      <Footer/>      
+        
       
 
       </div>
