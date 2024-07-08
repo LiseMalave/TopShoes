@@ -7,7 +7,7 @@ export const BannerContainer = styled.div`
   gap: 30px;
   padding: 2rem;
   background-color: bisque;
-  border: 1px solid red;
+  
   @media (max-width: 1286px) {
     justify-content: center;
   }
@@ -17,6 +17,11 @@ export const BannerContainer = styled.div`
 
 
   } 
+  @media (max-width: 500px) {
+    padding: 3.4em;
+    
+    
+  }
 `;
 export const BannerInfo = styled.div`
   display: flex;
@@ -38,14 +43,14 @@ export const BannerImg = styled.div`
     width: 300px;
     height: 200px;
     justify-content: center;
-    padding-right:60px;
+    
     
   }
   @media (max-width: 500px) {
     width: 100px;
     height: 150px;
     justify-content: center;
-    padding-right:0px;
+    
     
   }
 `;

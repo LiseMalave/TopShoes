@@ -1,18 +1,40 @@
-import React from 'react'
-import { ProductCard, ProductContainer, ProductTitle } from './Products'
+import React from "react";
+import {
+  CardImg,
+  CardInfo,
+  ProductCard,
+  ProductContainer,
+  ProductTitle,
+} from "./Products";
 
 function Products() {
   return (
     <div>
-       <ProductContainer>
-        <ProductTitle>Productos Destacados</ProductTitle>
+      <ProductTitle>Productos Destacados</ProductTitle>
+      <ProductContainer>
         <ProductCard>
-               <p>Productos</p>
+          <CardImg>
+            <img src="src\assets\botas.jpg" alt="" />
+          </CardImg>
+
+          <CardInfo>
+            <p>Bratze 002 </p>
+            <p>$ 27.990</p>
+          </CardInfo>
         </ProductCard>
-     
-       </ProductContainer>
+        <ProductCard>
+          <CardImg>
+            <img src="src\assets\nike.jpg" alt="" />
+          </CardImg>
+
+          <CardInfo>
+            <p>Nike tokio</p>
+            <p>$ 37.990</p>
+          </CardInfo>
+        </ProductCard>
+      </ProductContainer>
     </div>
-  )
+  );
 }
 
-export default Products
+export default Products;

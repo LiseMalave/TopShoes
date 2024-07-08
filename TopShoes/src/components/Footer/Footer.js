@@ -10,7 +10,7 @@ align-items: center;
 padding: 1rem 18rem;
 background-color: black;
 color: white;
-border: 1px solid red;
+
 @media (max-width: 900px) {
     justify-content: center;
     padding: 1rem;
