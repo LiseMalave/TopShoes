@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <div>
       <NavbarContainer>
-        <img src="src\assets\topshoesLogo.png" alt="" />
+        <img src="https://res.cloudinary.com/dkdvehyzk/image/upload/v1720457075/topshoesLogo_xi5ukb.png" alt="" />
         <NavbarLinksContainer>
           <NavbarLinks>
             <a href="#">Inicio</a>
@@ -13,7 +13,7 @@ function Navbar() {
             <a href="#">Invierno</a>
 
           </NavbarLinks>
-          <img src="src\assets\cesta.png"  alt="" srcset="" />
+          <img src="https://res.cloudinary.com/dkdvehyzk/image/upload/v1720457115/cesta_omvhgv.png"  alt="" />
         </NavbarLinksContainer>
         
       </NavbarContainer>

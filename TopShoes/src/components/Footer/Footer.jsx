@@ -6,8 +6,8 @@ function Footer() {
     <div>
         <FooterContainer>
             <FooterImg> 
-                <img src="src\assets\facebook.png" alt="facebook" />
-                 <img src="src\assets\instagram.png " alt='instagram' />
+                <img src="https://res.cloudinary.com/dkdvehyzk/image/upload/v1720457127/facebook_nyqqoy.png" alt="facebook" />
+                 <img src="https://res.cloudinary.com/dkdvehyzk/image/upload/v1720457137/instagram_adfrkt.png" alt='instagram' />
             </FooterImg>
             <FooterInfo><h4>Copyright Lisette Malave</h4></FooterInfo>
         </FooterContainer>

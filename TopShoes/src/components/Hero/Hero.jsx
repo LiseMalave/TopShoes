@@ -12,7 +12,7 @@ function Hero() {
             <p>Encuentra los diseños más modernos.</p>
             <HeroButton>Ver más</HeroButton>
         </HeroInfo>
-        <HeroImg><img src="src\assets\s.png" alt="" /></HeroImg>
+        <HeroImg><img src="https://res.cloudinary.com/dkdvehyzk/image/upload/v1720457086/s_kuacm1.png" alt="" /></HeroImg>
       
       </HeroContainer>
         

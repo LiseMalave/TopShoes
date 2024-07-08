@@ -16,7 +16,7 @@ function Banner() {
          
         </BannerInfo>
 
-       <BannerImg><img src="src\assets\banner.png" alt="" /></BannerImg> 
+       <BannerImg><img src="https://res.cloudinary.com/dkdvehyzk/image/upload/v1720457104/banner_dior6r.png" alt="" /></BannerImg> 
       </BannerContainer>
     </div>
   );
