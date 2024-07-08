@@ -6,7 +6,7 @@ export const BannerContainer = styled.div`
   justify-content: center;
   gap: 30px;
   padding: 2rem;
-  width: 100%;
+  
   background-color: bisque;
   @media (max-width: 1286px) {
     justify-content: center;

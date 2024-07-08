@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const NavbarContainer = styled.div`
-height: 47px;
+/* height: 47px; */
 display: flex;
 width: 100%;
 position: fixed;
