@@ -4,8 +4,9 @@ export const HeroContainer = styled.div`
   display: flex;
   /* background-color: #18191a; */
   justify-content: center;
+  padding-top: 10vw;
   gap: 20px;
-  padding: 50px;
+  /* padding: 50px; */
   
 `;
 export const HeroInfo = styled.div`

@@ -11,9 +11,11 @@ function Navbar() {
             <a href="#">Inicio</a>
             <a href="#">Productos</a>
             <a href="#">Contacto</a>
+
           </NavbarLinks>
+          <img src="src\assets\cesta.png"  alt="" srcset="" />
         </NavbarLinksContainer>
-        <img src="src\assets\cesta.png"  alt="" srcset="" />
+        
       </NavbarContainer>
     </div>
   );
