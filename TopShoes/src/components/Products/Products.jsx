@@ -25,7 +25,7 @@ function Products() {
         </ProductCard>
         <ProductCard>
           <CardImg>
-            <img src="https://drive.google.com/file/d/1_4h__WdnaO_x9X0OfQ4T21KJNFGCmZed/view?usp=drive_link" alt="" />
+            <img src="https://drive.google.com/file/d/1_4h__WdnaO_x9X0OfQ4T21KJNFGCmZed/view?usp=sharing" alt="" />
           </CardImg>
 
           <CardInfo>
