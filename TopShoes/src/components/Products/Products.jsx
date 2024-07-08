@@ -14,7 +14,7 @@ function Products() {
       <ProductContainer>
         <ProductCard>
           <CardImg>
-            <img src="https://pixabay.com/photos/boots-railroad-tracks-railway-shoes-181744/" alt="" />
+            <img src="https://res.cloudinary.com/dkdvehyzk/image/upload/v1720456774/majsiwaj94uli6kpep0w.jpg" alt="" />
           </CardImg>
 
           
