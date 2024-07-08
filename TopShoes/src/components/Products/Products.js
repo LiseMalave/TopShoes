@@ -34,8 +34,9 @@ export const ProductCard = styled.div`
 `
 export const CardInfo = styled.div`
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     text-align: center;
+    
 
 ` 
   export const CardImg = styled.div`

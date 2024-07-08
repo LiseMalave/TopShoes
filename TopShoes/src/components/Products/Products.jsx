@@ -17,8 +17,9 @@ function Products() {
             <img src="src\assets\botas.jpg" alt="" />
           </CardImg>
 
-          <CardInfo>
-            <p>Bratze 002 </p>
+          
+            <CardInfo>
+            <h3>Bratze 002 </h3>
             <p>$ 27.990</p>
           </CardInfo>
         </ProductCard>
@@ -28,7 +29,7 @@ function Products() {
           </CardImg>
 
           <CardInfo>
-            <p>Nike tokio</p>
+            <h3>Nike tokio</h3>
             <p>$ 37.990</p>
           </CardInfo>
         </ProductCard>
