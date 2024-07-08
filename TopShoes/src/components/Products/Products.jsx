@@ -14,7 +14,7 @@ function Products() {
       <ProductContainer>
         <ProductCard>
           <CardImg>
-            <img src="src\assets\botas.jpg" alt="" />
+            <img src="https://pixabay.com/photos/boots-railroad-tracks-railway-shoes-181744/" alt="" />
           </CardImg>
 
           
@@ -25,7 +25,7 @@ function Products() {
         </ProductCard>
         <ProductCard>
           <CardImg>
-            <img src="src\assets\nike.jpg" alt="" />
+            <img src="https://drive.google.com/file/d/1_4h__WdnaO_x9X0OfQ4T21KJNFGCmZed/view?usp=drive_link" alt="" />
           </CardImg>
 
           <CardInfo>
