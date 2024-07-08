@@ -10,9 +10,16 @@ align-items: center;
 padding: 1rem 18rem;
 background-color: black;
 color: white;
+border: 1px solid red;
 @media (max-width: 900px) {
     justify-content: center;
     padding: 1rem;
+    gap: 80px;
+    
+  }
+  @media (max-width: 500px) {
+    justify-content: center;
+    padding: 0rem;
     gap: 80px;
     
   }

@@ -12,7 +12,7 @@ export const GlobalStyles = createGlobalStyle`
 
     html {
         scroll-behavior: smooth;
-        border: 1px solid red;
+       border: 1px solid red;
     }
 
     body {
@@ -22,7 +22,7 @@ export const GlobalStyles = createGlobalStyle`
         color: black;
         overflow-x:hidden;
         width: 100%;
-        border: 1px solid red;
+        
     }
 
     a {

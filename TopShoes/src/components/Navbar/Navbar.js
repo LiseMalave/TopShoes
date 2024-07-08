@@ -16,6 +16,14 @@ color: white;
     gap: 40px;
 
   }
+  @media (max-width: 500px) {
+    gap: 2px;
+    padding: 1rem 0;
+    justify-content: center;
+   
+
+  }
+  
 
 `
 
@@ -24,6 +32,12 @@ display: flex;
 gap: 20px;
 padding: 15px;
 color: white;
+@media (max-width: 500px) {
+    gap: 7px;
+    justify-content: center;
+   
+
+  }
 
 `
 

@@ -10,7 +10,7 @@ function Navbar() {
           <NavbarLinks>
             <a href="#">Inicio</a>
             <a href="#">Productos</a>
-            <a href="#">Contacto</a>
+            <a href="#">Invierno</a>
 
           </NavbarLinks>
           <img src="src\assets\cesta.png"  alt="" srcset="" />
