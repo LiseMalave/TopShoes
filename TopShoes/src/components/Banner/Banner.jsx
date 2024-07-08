@@ -10,7 +10,7 @@ function Banner() {
 
           <p>
             Encuentra los zapatos femeninos más modernos y de vanguardia en
-            nuestra tienda online. Tememos una amplia variedad
+            nuestra tienda online. Tenemos una amplia variedad
             de estilos y diseños para satisfacer tus gustos y necesidades.
           </p>
          

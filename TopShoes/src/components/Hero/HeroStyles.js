@@ -4,7 +4,7 @@ export const HeroContainer = styled.div`
   display: flex;
   /* background-color: #18191a; */
   justify-content: center;
-  
+  gap: 20px;
   padding: 50px;
   
 `;
@@ -13,9 +13,10 @@ export const HeroInfo = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   color: #18191a;
-  gap: 15px;
-  width: 20%;
+  gap: 10px;
+  width: 25%;
   height: 400px;
   border-radius: 10px;
 `;
@@ -27,3 +28,7 @@ width: 10em;
   color: white;
   border: none;
 `;
+export const SpanHero =styled.span` 
+color: pink;
+width: 20px;
+`
