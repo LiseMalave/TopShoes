@@ -39,6 +39,7 @@ export const HeroInfo = styled.div`
   }
 `;
 export const HeroImg = styled.div`
+
 @media (max-width: 1286px) {
     justify-content: center;
     display: none;
