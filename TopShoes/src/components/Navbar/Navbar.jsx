@@ -13,7 +13,7 @@ function Navbar() {
             <a href="#">Contacto</a>
           </NavbarLinks>
         </NavbarLinksContainer>
-        <img src="src\assets\carro-de-compras-rapido.png"  alt="" srcset="" />
+        <img src="src\assets\cesta.png"  alt="" srcset="" />
       </NavbarContainer>
     </div>
   );

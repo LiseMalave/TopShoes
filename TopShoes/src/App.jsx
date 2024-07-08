@@ -5,6 +5,7 @@ import Layout from "./components/Layout/Layout";
 import Navbar from "./components/Navbar/Navbar.jsx";
 import Products from "./components/Products/Products.jsx";
 import Footer from "./components/Footer/Footer.jsx";
+import Banner from "./components/Banner/Banner.jsx";
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
 
           <Hero/>
           <Products/>
+          <Banner/>
         </Layout>
 
       <Footer/>      
