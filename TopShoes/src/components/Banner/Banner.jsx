@@ -1,5 +1,5 @@
 import React from "react";
-import { BannerContainer, BannerInfo } from "./Banner";
+import { BannerContainer, BannerImg, BannerInfo } from "./Banner";
 
 function Banner() {
   return (
@@ -16,7 +16,7 @@ function Banner() {
          
         </BannerInfo>
 
-        <img src="src\assets\banner.png" alt="" />
+       <BannerImg><img src="src\assets\banner.png" alt="" /></BannerImg> 
       </BannerContainer>
     </div>
   );

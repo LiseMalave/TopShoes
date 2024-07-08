@@ -20,6 +20,7 @@ export const GlobalStyles = createGlobalStyle`
         background-color: white;
         color: black;
         overflow-x:hidden;
+        width: 100%;
     }
 
     a {
@@ -31,7 +32,7 @@ export const GlobalStyles = createGlobalStyle`
         list-style: none;
     }
     
-
+    
     button:hover{
         background-color: pink;
     }

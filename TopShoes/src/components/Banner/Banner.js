@@ -7,6 +7,7 @@ justify-content: center;
 gap: 30px;
 padding: 2rem;
 width: 100%;
+background-color: bisque;
 `
 export const BannerInfo = styled.div`
 display: flex;
@@ -17,4 +18,7 @@ display: flex;
   gap: 15px;
   width: 20%;
   height: 400px;
+`
+export const BannerImg = styled.div`
+
 `

@@ -1,5 +1,5 @@
 import React from 'react'
-import { HeroContainer,HeroButton,HeroInfo, SpanHero } from './HeroStyles'
+import { HeroContainer,HeroButton,HeroInfo, SpanHero, HeroImg } from './HeroStyles'
 
 function Hero() {
   return (
@@ -12,7 +12,8 @@ function Hero() {
             <p>Encuentra los diseños más modernos.</p>
             <HeroButton>Ver más</HeroButton>
         </HeroInfo>
-      <img src="src\assets\s.png" alt="" />
+        <HeroImg><img src="src\assets\s.png" alt="" /></HeroImg>
+      
       </HeroContainer>
         
     </div>

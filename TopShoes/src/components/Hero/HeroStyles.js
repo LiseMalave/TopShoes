@@ -2,11 +2,20 @@ import styled from "styled-components";
 
 export const HeroContainer = styled.div`
   display: flex;
-  /* background-color: #18191a; */
+  margin-top: 10vh;
   justify-content: center;
-  padding-top: 10vw;
+  padding-top: 2rem;
   gap: 20px;
+  width: 100%;
+
   /* padding: 50px; */
+  @media (max-width: 1286px) {
+    background-color: transparent;
+  
+
+
+  }
+
   
 `;
 export const HeroInfo = styled.div`
@@ -18,9 +27,24 @@ export const HeroInfo = styled.div`
   color: #18191a;
   gap: 10px;
   width: 25%;
-  height: 400px;
   border-radius: 10px;
+
+  @media (max-width: 1286px) {
+    
+    width: 100%;
+    
+    
+    
+
+  }
 `;
+export const HeroImg = styled.div`
+@media (max-width: 1286px) {
+    justify-content: center;
+    display: none;
+} 
+`
+
 export const HeroButton = styled.button`
 width: 10em;
   background-color: var(--orange-bg);

@@ -1,7 +1,7 @@
 
 import viteLogo from "/vite.svg";
-import Hero from "./components/Hero/Hero";
-import Layout from "./components/Layout/Layout";
+import Hero from "./components/Hero/Hero.jsx";
+import Layout from "./components/Layout/Layout.jsx";
 import Navbar from "./components/Navbar/Navbar.jsx";
 import Products from "./components/Products/Products.jsx";
 import Footer from "./components/Footer/Footer.jsx";
