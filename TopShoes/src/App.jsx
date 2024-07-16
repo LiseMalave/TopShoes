@@ -1,4 +1,3 @@
-
 import viteLogo from "/vite.svg";
 import Hero from "./components/Hero/Hero.jsx";
 import Layout from "./components/Layout/Layout.jsx";
@@ -6,26 +5,35 @@ import Navbar from "./components/Navbar/Navbar.jsx";
 import Products from "./components/Products/Products.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import Banner from "./components/Banner/Banner.jsx";
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import About from "./components/About/About.jsx";
+import Contac from "./components/Contact/Contac.jsx";
 
 function App() {
   return (
-    <>
-      <div>
-        <Navbar/>
-        <Layout>
-
-          <Hero/>
-          <Products/>
-          <Banner/>
-        </Layout>
-
-      <Footer/>      
+    <BrowserRouter>
+      <Routes>
+        <Route path='' element={<Layout/>}/>
+        <Route index element={<Layout/>}/>
+        <Route path="about" element={<About/>}/>
+        <Route path="contac" element={<Contac/>}/>
+        <Route path="producto" element={<Products/>}/>
         
-      
+      </Routes>
+    </BrowserRouter>
+    //  <>
 
-      </div>
-    </>
+    //     <Navbar/>
+    //     <Layout>
+
+    //       <Hero/>
+    //       <Products/>
+    //       <Banner/>
+    //     </Layout>
+
+    //   <Footer/>
+
+    // </>
   );
 }
 
