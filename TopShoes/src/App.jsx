@@ -4,10 +4,10 @@ import Layout from "./components/Layout/Layout.jsx";
 import Navbar from "./components/Navbar/Navbar.jsx";
 import Products from "./components/Products/Products.jsx";
 import Footer from "./components/Footer/Footer.jsx";
-import Banner from "./components/Banner/Banner.jsx";
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "./components/About/About.jsx";
-import Contac from "./components/Contact/Contac.jsx";
+import Contac from "./components/Contact/Contact.jsx";
 
 function App() {
   return (
