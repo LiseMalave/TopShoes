@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const ContactContainer = styled.div`
 display: flex;
-  padding: 17.3vh 10.3vh;
+  padding: 8.3vh 10.2vh;
+  margin-top: 2px;
   gap: 20px;
   width: 90%;
   line-height: 45px;
@@ -10,16 +11,33 @@ display: flex;
   align-items: center;
   background-color: bisque;
   text-align: center;
+  @media (max-width: 551px) {
+    padding: 0 3vh;
+    
+}
+
 `
 export const ContactText = styled.div`
 display: flex;
+text-align: center;
+justify-content: center;
 `
 
 export const ContactInfo = styled.div`
 display: flex;
 flex-direction: column;
+padding: 5vh;
 `
 
-export const ContactForm = styled.div`
-
+export const ContactForm = styled.form`
+display: flex;
+flex-direction: column;
+gap: 10px;
+flex-wrap: wrap;
+justify-content: center;
+`
+export const ContactButton = styled.button`
+ background-color: var(--orange-bg); 
+ border-radius: 10px;
+  padding: 5px 1rem;
 `

@@ -35,6 +35,7 @@ export const GlobalStyles = createGlobalStyle`
     }
     
     
+    
     button:hover{
         background-color: pink;
     }
