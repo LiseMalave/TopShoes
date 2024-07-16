@@ -11,7 +11,6 @@ function Layout() {
   return (
     <div>
     <LayoutContainer>
-    
     <Hero/>
     <Products/>
     <Banner/>

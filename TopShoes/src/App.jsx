@@ -13,27 +13,15 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Navbar/>}/>
+        <Route path='/' element={<Navbar/>}>
           <Route index element={<Layout/>}/>
           <Route path="about" element={<About/>}/>
           <Route path="contac" element={<Contac/>}/>
           <Route path="producto" element={<Products/>}/>
-       <Route/> 
+        </Route> 
       </Routes>
     </BrowserRouter>
-    //  <>
-
-    //     <Navbar/>
-    //     <Layout>
-
-    //       <Hero/>
-    //       <Products/>
-    //       <Banner/>
-    //     </Layout>
-
-    //   <Footer/>
-
-    // </>
+    
   );
 }
 

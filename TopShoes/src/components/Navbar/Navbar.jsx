@@ -5,7 +5,7 @@ import { Link, Outlet } from "react-router-dom";
 
 function Navbar() {
   return (
-    <>
+    <div>
     <nav>
       <NavbarContainer>
         <img src="https://res.cloudinary.com/dkdvehyzk/image/upload/v1720457075/topshoesLogo_xi5ukb.png" alt="" />
@@ -24,7 +24,7 @@ function Navbar() {
       </NavbarContainer>
     </nav>
     <Outlet/>
-    </>
+    </div>
   );
 }
 
