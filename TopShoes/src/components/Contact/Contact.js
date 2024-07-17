@@ -11,8 +11,8 @@ display: flex;
   align-items: center;
   background-color: bisque;
   text-align: center;
-  @media (max-width: 551px) {
-    padding: 0 3vh;
+  @media (max-width: 751px) {
+    padding: 8vh 5vh;
     
 }
 

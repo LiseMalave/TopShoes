@@ -1,11 +1,12 @@
 import React from 'react'
-import { AboutContainer, AboutImg, AboutInfo, AboutText, NavSpace } from './About'
+import { AboutContainer, AboutImg, AboutInfo, AboutText} from './About'
 import Footer from '../Footer/Footer.jsx'
+
 
 function About() {
   return (
     <>
-    <NavSpace></NavSpace>
+  
     <AboutContainer>
    
    
@@ -15,6 +16,7 @@ function About() {
 
       </AboutText>
       <AboutImg><img src="https://res.cloudinary.com/dkdvehyzk/image/upload/v1720456652/samples/imagecon-group.jpg" alt="empresa" /></AboutImg>
+      
     </AboutInfo>
     
     </AboutContainer>

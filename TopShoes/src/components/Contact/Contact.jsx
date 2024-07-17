@@ -1,5 +1,5 @@
 import React from "react";
-import { NavSpace } from "../About/About";
+
 import Footer from "../Footer/Footer.jsx";
 import {
   ContactContainer,
@@ -13,7 +13,7 @@ import {
 function Contact() {
   return (
     <>
-      <NavSpace></NavSpace>
+
       <ContactContainer>
         <ContactInfo>
           <ContactText>
