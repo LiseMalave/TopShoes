@@ -5,7 +5,6 @@ import styled from "styled-components";
 
 export const AboutContainer = styled.div`
 display: flex;
-  /* padding: 17.3vh 10.3vh; */
   padding: 10rem 3.3rem;
   gap: 20px;
   width: 100%;
