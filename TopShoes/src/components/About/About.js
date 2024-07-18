@@ -20,6 +20,11 @@ display: flex;
 
     
 }
+@media (max-width: 1403px) {
+    padding: 7rem 1rem;
+
+
+}
 
  
 `
@@ -51,12 +56,12 @@ export const AboutImg = styled.div`
 display: flex;
 height: 350px;
 width: 40%;
-@media (max-width: 1203px) {
+@media (max-width: 1403px) {
   width: 20%;
-  height: 250px;
+  height: 200px;
     
 }
-@media (max-width: 1073px) {
+@media (max-width: 1400px) {
   display: none;
     
 }

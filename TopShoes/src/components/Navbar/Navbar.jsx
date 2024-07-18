@@ -13,7 +13,7 @@ function Navbar() {
           <NavbarLinks>
             <Link to="/">Inicio</Link>
             <Link to="about">About</Link>
-            <Link to="productos">Productos</Link>
+            <Link to="shoes">Productos</Link>
             <Link to="contac">Contacto</Link>
             
 

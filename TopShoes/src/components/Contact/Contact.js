@@ -12,12 +12,13 @@ display: flex;
   background-color: bisque;
   text-align: center;
   @media (max-width: 1086px) {
+  padding: 8rem 1rem;
    min-height: 85vh;
     
 }
 @media (max-width: 489px) {
    min-height: 108vh;
-   padding: 5rem 3.4rem;
+   padding: 5rem 0rem;
     
 }
 
