@@ -1,7 +1,7 @@
 import React from 'react'
-import { ShoeCard, ShoeContainer, Space } from './Shoe'
+import { ShoeCard, ShoeContainer, ShoeImg, Space } from './Shoe'
 
-function Shoe({nombre,precio}) {
+function Shoe({nombre,precio,img}) {
   return (
     <>
         <Space></Space>
@@ -10,7 +10,10 @@ function Shoe({nombre,precio}) {
                 
         <h2>{nombre}</h2>
         <h2>{precio}</h2>
-       
+        <ShoeImg>
+          <img src={img} alt={nombre} />
+        </ShoeImg>
+        
          
             </ShoeCard>
          

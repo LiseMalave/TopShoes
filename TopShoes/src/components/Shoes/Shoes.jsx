@@ -7,7 +7,7 @@ function Shoes() {
   return (
     <ShoeContainer>
         {shoes.map((prod) => (
-          <Shoe nombre={prod.nombre} precio={prod.precio} />
+          <Shoe nombre={prod.nombre} precio={prod.precio} img={prod.img}/>
         
    ))}
 

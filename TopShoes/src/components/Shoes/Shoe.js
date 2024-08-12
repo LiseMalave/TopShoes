@@ -19,10 +19,17 @@ export const ShoeContainer = styled.div`
 `
 
 export const ShoeCard = styled.div`
-height: 350px;
-padding: 50px 80px;
+
+padding: 50px 50px;
     background-color: bisque;
     border-radius: 15px;
     text-align: center;
+
+`
+export const ShoeImg = styled.div`
+
+
+display: flex;
+
 
 `
