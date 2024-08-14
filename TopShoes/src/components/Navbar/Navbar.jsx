@@ -2,15 +2,18 @@ import React from "react";
 
 import { NavbarContainer, NavbarLinks, NavbarLinksContainer } from "./Navbar";
 import { Link, Outlet } from "react-router-dom";
+import { useContext } from "react";
+import { MenuContext } from "../context/ContextMenu";
 
 function Navbar() {
+  const {openMenu, toggleMenu} = useContext(MenuContext);
   return (
     <div>
     <nav>
       <NavbarContainer>
         <img src="https://res.cloudinary.com/dkdvehyzk/image/upload/v1720457075/topshoesLogo_xi5ukb.png" alt="" />
         <NavbarLinksContainer>
-          <NavbarLinks>
+          <NavbarLinks className={openMenu ? 'active' : ''}>
             <Link to="/">Inicio</Link>
             <Link to="about">About</Link>
             <Link to="shoes">Productos</Link>
