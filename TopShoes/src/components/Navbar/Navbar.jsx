@@ -4,6 +4,7 @@ import { NavbarContainer, NavbarLinks, NavbarLinksContainer } from "./Navbar";
 import { Link, Outlet } from "react-router-dom";
 import { useContext } from "react";
 import { MenuContext } from "../context/ContextMenu";
+import BurgerButton from "./BurgerButton";
 
 function Navbar() {
   const {openMenu, toggleMenu} = useContext(MenuContext);
@@ -21,9 +22,15 @@ function Navbar() {
             
 
           </NavbarLinks>
+          <div className="cart">
           <img src="https://res.cloudinary.com/dkdvehyzk/image/upload/v1720457115/cesta_omvhgv.png"  alt="" />
+
+          </div>
         </NavbarLinksContainer>
-        
+        <div className="toggleBurger">
+        <BurgerButton openMenu={openMenu} toggleMenu={toggleMenu}/>
+
+        </div>
       </NavbarContainer>
     </nav>
     <Outlet/>
