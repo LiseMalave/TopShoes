@@ -45,12 +45,13 @@ color: white;
 &.active{
   position: absolute;
     display: flex;
-    top: 80px;
+    top: 102px;
     left: 50%;
     right: 5%;
     width: 90%;
     flex-direction: column;
-    background-color: #f454;
+    background: -webkit-linear-gradient(to right, #ee9ca7, #ffdde1); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ee9ca7, #ffdde1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border: 2px solid #000;
     border-top: 0px;
     border-radius: 0px 0px 15px 15px;
