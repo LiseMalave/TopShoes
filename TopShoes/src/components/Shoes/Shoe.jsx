@@ -1,11 +1,16 @@
-import React from 'react'
+
 import { BuyButton, ShoeCard, ShoeContainer, ShoeImg, Space } from './Shoe'
 
+
+
 function Shoe({nombre,precio,img}) {
+  
   return (
     <>
-        <Space></Space>
+        
+        
             <ShoeContainer>
+              
                  <ShoeCard>
                 
         <h2>{nombre}</h2>
@@ -19,6 +24,7 @@ function Shoe({nombre,precio,img}) {
          
             </ShoeContainer>
           
+       
 
         
         

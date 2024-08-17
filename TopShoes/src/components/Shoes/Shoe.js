@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 export const Space = styled.div`
 display: flex;
-height: 400px;
+height: 150px;
 `
 
 export const ShoeContainer = styled.div`
@@ -41,6 +41,31 @@ margin-top: 10px;
 padding: 10px;
 border: none;
 border-radius: 10px;
-background-color: white;
+background-color: beige;
+
+`
+
+export const ButtonCategories = styled.button`
+
+width: 80px;
+margin-top: 10px;
+padding: 5px;
+border: none;
+border-radius: 10px;
+background-color: beige;
+
+`
+
+export const ButtonContainer = styled.div`
+display: flex;
+justify-content: start;
+gap: 8px;
+padding-left:10%;
+
+`
+
+export const Headline = styled.div`
+display: flex;
+padding-left: 10%;
 
 `
