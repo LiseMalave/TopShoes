@@ -11,14 +11,14 @@ function Shoes() {
   const [categories, setCategories] = useState(allCategories);
  const [product, setProduct] =useState(shoes)
   const filterCategory = (categories) =>{
-    console.log(categories)
+    
     if (categories === 'All'){
       setProduct(shoes)
       
       return
     } 
     const filteredData = shoes.filter(sho => sho.categoria === categories);
-    console.log(filteredData)
+   
 		setProduct(filteredData)
   }
   return (
