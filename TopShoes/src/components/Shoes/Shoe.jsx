@@ -1,5 +1,5 @@
 import React from 'react'
-import { ShoeCard, ShoeContainer, ShoeImg, Space } from './Shoe'
+import { BuyButton, ShoeCard, ShoeContainer, ShoeImg, Space } from './Shoe'
 
 function Shoe({nombre,precio,img}) {
   return (
@@ -14,7 +14,7 @@ function Shoe({nombre,precio,img}) {
           <img src={img} alt={nombre} />
         </ShoeImg>
         
-         
+            <BuyButton> Comprar</BuyButton>
             </ShoeCard>
          
             </ShoeContainer>
