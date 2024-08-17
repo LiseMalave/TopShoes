@@ -1,14 +1,13 @@
-import { ButtonCategories, BuyButton } from "./Shoe";
+import { ButtonCategories } from "./Shoe";
 
-export const ButtonCategory = ({ categories }) => {
+export const ButtonCategory = ({ categories,filterCategory }) => {
 	return (
 
 		<>
 			{categories.map(category => (
 				<ButtonCategories
 					type='button'
-					className='btn-category'
-					onClick={() => (category)}
+					onClick={() => (filterCategory(category))}
 					key={category}
 				>
 					{category}

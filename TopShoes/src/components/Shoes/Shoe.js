@@ -9,7 +9,7 @@ height: 150px;
 
 export const ShoeContainer = styled.div`
     display: flex;
-    padding: 5rem;
+    padding: 3rem;
     gap: 10px;
     flex-wrap: wrap;
     justify-content: center;
@@ -49,7 +49,7 @@ export const ButtonCategories = styled.button`
 
 width: 80px;
 margin-top: 10px;
-padding: 5px;
+padding: 15px;
 border: none;
 border-radius: 10px;
 background-color: beige;
@@ -60,12 +60,12 @@ export const ButtonContainer = styled.div`
 display: flex;
 justify-content: start;
 gap: 8px;
-padding-left:10%;
+padding-left:13.5%;
 
 `
 
 export const Headline = styled.div`
 display: flex;
-padding-left: 10%;
+padding-left: 13.5%;
 
 `

@@ -1,31 +1,34 @@
 
 import { BuyButton, ShoeCard, ShoeContainer, ShoeImg, Space } from './Shoe'
+import { shoes } from './lista'
 
 
-
-function Shoe({nombre,precio,img}) {
+function Shoe({product}) {
   
   return (
     <>
+        {product.map((prod) => (
+          
         
-        
+ 
+          
             <ShoeContainer>
               
                  <ShoeCard>
                 
-        <h2>{nombre}</h2>
-        <h2>{precio}</h2>
+        <h2>{prod.nombre}</h2>
+        <h2>{prod.precio}</h2>
         <ShoeImg>
-          <img src={img} alt={nombre} />
+          <img src={prod.img} alt={prod.id} />
         </ShoeImg>
-        
+       
             <BuyButton> Comprar</BuyButton>
             </ShoeCard>
          
             </ShoeContainer>
           
        
-
+ ))}
         
         
     </>

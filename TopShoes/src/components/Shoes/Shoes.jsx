@@ -9,6 +9,18 @@ import { useState } from "react"
 function Shoes() {
   const allCategories = ['All', ... new Set(shoes.map(shoe => shoe.categoria))];
   const [categories, setCategories] = useState(allCategories);
+ const [product, setProduct] =useState(shoes)
+  const filterCategory = (categories) =>{
+    console.log(categories)
+    if (categories === 'All'){
+      setProduct(shoes)
+      
+      return
+    } 
+    const filteredData = shoes.filter(sho => sho.categoria === categories);
+    console.log(filteredData)
+		setProduct(filteredData)
+  }
   return (
   <>
     <Space></Space>
@@ -17,17 +29,14 @@ function Shoes() {
     </Headline>
     <ButtonContainer>
      
- <ButtonCategory categories={categories}></ButtonCategory>
+    <ButtonCategory categories={categories} filterCategory={filterCategory}></ButtonCategory>
     </ButtonContainer>
      
     
      <ShoeContainer>
-    
+    <Shoe product={product}></Shoe>
       
-        {shoes.map((prod) => (
-          <Shoe nombre={prod.nombre} precio={prod.precio} img={prod.img}/>
         
-   ))}
 
     </ShoeContainer>
   </>
