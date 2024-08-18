@@ -20,6 +20,7 @@ function About() {
     </AboutInfo>
     
     </AboutContainer>
+    
     <Footer></Footer>
     </>
   )

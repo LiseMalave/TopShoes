@@ -4,10 +4,15 @@ import { NavbarContainer, NavbarLinks, NavbarLinksContainer } from "./Navbar";
 import { Link, Outlet } from "react-router-dom";
 import { useContext } from "react";
 import { MenuContext } from "../context/ContextMenu";
+
 import BurgerButton from "./BurgerButton";
+import { CartButton } from "./Navbar";
+import { CartContext } from "../context/ContextCart.jsx";
+
 
 function Navbar() {
   const {openMenu, toggleMenu} = useContext(MenuContext);
+  const {openCart, toggleCart } = useContext(CartContext);
   return (
     <div>
     <nav>
@@ -22,9 +27,14 @@ function Navbar() {
             
 
           </NavbarLinks>
-          <div className="cart">
-          <img src="https://res.cloudinary.com/dkdvehyzk/image/upload/v1720457115/cesta_omvhgv.png"  alt="" />
+          <div className="cartToggle">
+          <CartButton className="active">
+            
+             <img src="https://res.cloudinary.com/dkdvehyzk/image/upload/v1720457115/cesta_omvhgv.png"  alt="" />
+          </CartButton>
 
+         
+          
           </div>
         </NavbarLinksContainer>
         <div className="toggleBurger">

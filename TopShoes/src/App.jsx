@@ -11,11 +11,12 @@ import Contac from "./components/Contact/Contact.jsx";
 import Shoe from "./components/Shoes/Shoe.jsx";
 import Shoes from "./components/Shoes/Shoes.jsx";
 import { ContextMenu } from "./components/context/ContextMenu.jsx";
+import ContextCart from "./components/context/ContextCart.jsx";
 function App() {
   return (
     <>
     <ContextMenu>
-
+    <ContextCart>
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Navbar/>}>
@@ -26,6 +27,7 @@ function App() {
         </Route> 
       </Routes>
     </BrowserRouter>
+    </ContextCart>
     </ContextMenu>
    </> 
   );

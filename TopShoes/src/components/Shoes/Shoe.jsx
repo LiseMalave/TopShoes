@@ -1,6 +1,6 @@
 
-import { BuyButton, ShoeCard, ShoeContainer, ShoeImg, Space } from './Shoe'
-import { shoes } from './lista'
+import { BuyButton, ShoeCard, ShoeContainer, ShoeImg} from './Shoe'
+
 
 
 function Shoe({product}) {

@@ -21,10 +21,10 @@ export const ShoeContainer = styled.div`
 export const ShoeCard = styled.div`
 
 padding: 30px 25px;
-    background-color: bisque;
+background: linear-gradient(to right, rgba(227,177,169,0.41), #ffdde1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: 15px;
-    text-align: center;
-    border: solid 1px;
+    text-align: center; 
+    border: solid 2px gray;
 
 `
 export const ShoeImg = styled.div`
@@ -39,9 +39,9 @@ export const BuyButton = styled.button`
 width: 80px;
 margin-top: 10px;
 padding: 10px;
-border: none;
+border: solid gray 1px;
 border-radius: 10px;
-background-color: beige;
+background-color: #ffdde1;
 
 `
 
@@ -50,9 +50,9 @@ export const ButtonCategories = styled.button`
 width: 80px;
 margin-top: 10px;
 padding: 15px;
-border: none;
+border: solid 1px gray;
 border-radius: 10px;
-background-color: beige;
+background-color: #ffdde1;
 
 `
 
