@@ -90,6 +90,10 @@ export const CartContainer = styled.div`
 
 
 `
+export const CartInfo = styled.div`
+display: none;
+
+`
 
 export const CartButton = styled.button`
 background-color: transparent;
