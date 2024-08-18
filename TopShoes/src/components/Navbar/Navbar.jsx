@@ -6,13 +6,20 @@ import { useContext } from "react";
 import { MenuContext } from "../context/ContextMenu";
 
 import BurgerButton from "./BurgerButton";
-import { CartButton } from "./Navbar";
-import { CartContext } from "../context/ContextCart.jsx";
+import Cart from "./Cart.jsx";
+import { CartContext } from "../context/ContextCart";
+
 
 
 function Navbar() {
   const {openMenu, toggleMenu} = useContext(MenuContext);
   const {openCart, toggleCart } = useContext(CartContext);
+  console.log(openCart)
+  const isOpen = () => {
+    if(openCart=== 'active'){
+      
+    }
+  }
   return (
     <div>
     <nav>
@@ -27,11 +34,12 @@ function Navbar() {
             
 
           </NavbarLinks>
-          <div className="cartToggle">
-          <CartButton className="active">
+          <div className={openCart ? 'active' : ''} >
             
-             <img src="https://res.cloudinary.com/dkdvehyzk/image/upload/v1720457115/cesta_omvhgv.png"  alt="" />
-          </CartButton>
+          <Cart  openCart={openCart} toggleCart={toggleCart}>
+            
+             
+          </Cart>
 
          
           

@@ -84,8 +84,7 @@ color: white;
 `
 
 export const CartContainer = styled.div`
-background-color: black;
-border: 20px solid #e3b1a9;
+
 
 
 
@@ -103,11 +102,11 @@ cursor: pointer;
     top: 0;
     left: 50%;
     right: 5%;
-    width: 90%;
+    width: 49%;
     height: calc(107vh - 65px);
     flex-direction: column;
-    background: -webkit-linear-gradient(to right, rgba(227,177,169,0.61), #ffdde1); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, rgba(227,177,169,0.61), #ffdde1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, rgba(227,177,169), #ffdde1); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgba(227,177,169), #ffdde1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border: 2px solid #000;
     border-top: 0px;
     border-radius: 0px 0px 15px 15px;

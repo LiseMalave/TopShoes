@@ -1,21 +1,20 @@
-import React, { createContext, useState } from 'react'
+import React, { createContext, useState } from "react";
 
 export const CartContext = createContext();
-function ContextCart({children}) {
-    const [opencart, setOpenCart] = useState(false);
-    const toggleCart = () => {
-      setCart(prevOpen => !prevOpen)
-    };
+
+export function ContextCart({ children }) {
+  const [openCart, setOpenCart] = useState(false);
+
+  const toggleCart = () => {
+    setOpenCart(prevOpen => !prevOpen);
+  };
   return (
-    <>
-    <CartContext.Provider value={
-        [toggleCart,setOpenCart,opencart]
-        
-    }>
-    {children}
-    </CartContext.Provider>
-    </>
-  )
+ 
+      <CartContext.Provider value={{toggleCart, setOpenCart, openCart}}>
+        {children}
+      </CartContext.Provider>
+  
+  );
 }
 
-export default ContextCart
+export default ContextCart;
