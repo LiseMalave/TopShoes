@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const NavbarContainer = styled.div`
 /* height: 47px; */
@@ -150,6 +151,17 @@ cursor: pointer;
 
 
 `
+export const ModalOverlayStyled = styled(motion.div)`
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  width: calc(100vw - 450px);
+  height: 100vh;
+
+ 
+`;
+
 
 export const LinksContainerStyled = styled.div`
   color: white;

@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
+import { AnimatePresence } from "framer-motion";
+
 import { MdOutlineClose } from "react-icons/md";
 import {IoMdTrash} from "react-icons/io";
+import { ModalOverlayStyled } from "../Navbar.js";
 import {
   ContainerStyled,
   MainContainerStyled,
@@ -18,15 +21,38 @@ import {
 
 import { CartButton } from "../Navbar.js";
 
+
+
 function ModalCart() {
+ 
+    const [hiddenCart, setHiddenCart] = useState(false);
+
+    const toggleCart = () => {
+      setHiddenCart(prevOpenMenu => !prevOpenMenu)
+      console.log(hiddenCart)
+    };
+
   return (
     <>
-
-      <ContainerStyled hidden={true} >
+     {!hiddenCart && (
+        <ModalOverlayStyled
+          onClick={() => toggleCart()}
+          isHidden={hiddenCart}
+          className={hiddenCart ? 'active' : ''}
+        />
+      )}
+      <AnimatePresence>
+      <ContainerStyled    
+        initial={{ translateX: 600 }}
+        animate={{ translateX: 0 }}
+        exit={{ translateX: 600 }}
+        transition={{ type: "spring", damping: 27 }}
+        key="cart-modal" >
         <CloseButtonContainerStyled>
           <CloseButtonStyled
             className="close__modal "
             whileTap={{ scale: 0.95 }}
+            onClick={() =>toggleCart()}
           >
             <MdOutlineClose size="24px" />
           </CloseButtonStyled>
@@ -62,6 +88,7 @@ function ModalCart() {
           </ButtonContainerStyled>
         </PriceContainerStyled>
       </ContainerStyled>
+      </AnimatePresence>
     </>
   );
 }

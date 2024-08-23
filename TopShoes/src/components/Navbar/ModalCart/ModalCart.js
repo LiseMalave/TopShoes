@@ -1,7 +1,8 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
 
-export const ContainerStyled = styled.div`
+export const ContainerStyled = styled(motion.div)`
   position: fixed;
   top: 0;
   right: 0;
@@ -26,7 +27,7 @@ export const CloseButtonContainerStyled = styled.div`
   height: 32px;
 `;
 
-export const CloseButtonStyled = styled.button`
+export const CloseButtonStyled = styled(motion.button)`
   display: flex;
   justify-content: center;
   align-items: center;
