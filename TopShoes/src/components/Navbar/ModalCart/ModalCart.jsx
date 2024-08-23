@@ -23,9 +23,11 @@ import { CartButton } from "../Navbar.js";
 
 
 
-function ModalCart() {
+function ModalCart(props) {
+
+   
  
-    const [hiddenCart, setHiddenCart] = useState(false);
+    const [hiddenCart, setHiddenCart] = useState(true);
 
     const toggleCart = () => {
       setHiddenCart(prevOpenMenu => !prevOpenMenu)
@@ -34,20 +36,19 @@ function ModalCart() {
 
   return (
     <>
-     {!hiddenCart && (
-        <ModalOverlayStyled
-          onClick={() => toggleCart()}
-          isHidden={hiddenCart}
-          className={hiddenCart ? 'active' : ''}
-        />
-      )}
+         
+    
       <AnimatePresence>
       <ContainerStyled    
         initial={{ translateX: 600 }}
         animate={{ translateX: 0 }}
         exit={{ translateX: 600 }}
         transition={{ type: "spring", damping: 27 }}
-        key="cart-modal" >
+        key="cart-modal" 
+        onClick={props.toggleCart} className= {`${props.openCart ? "active" : ""}`}
+        
+        >
+        
         <CloseButtonContainerStyled>
           <CloseButtonStyled
             className="close__modal "
@@ -88,9 +89,11 @@ function ModalCart() {
           </ButtonContainerStyled>
         </PriceContainerStyled>
       </ContainerStyled>
+    
       </AnimatePresence>
+      
     </>
   );
-}
+};
 
 export default ModalCart;

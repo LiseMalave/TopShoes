@@ -6,15 +6,17 @@ import { useContext } from "react";
 import { MenuContext } from "../context/ContextMenu";
 
 import BurgerButton from "./BurgerButton";
-import Cart from "./Cart.jsx";
-import { CartContext } from "../context/ContextCart";
+
+
 import CartIcon from "./CartIcon/CartIcon.jsx";
 import ModalCart from "./ModalCart/ModalCart.jsx";
+import { CartContext } from "../context/ContextCart.jsx";
 
 
 
 function Navbar() {
   const {openMenu, toggleMenu} = useContext(MenuContext);
+  const {openCart, toggleCart} =useContext(CartContext);
 
  
   return (
@@ -22,7 +24,7 @@ function Navbar() {
     <nav>
      
       <NavbarContainer>
-         <ModalCart/>
+    
         <img src="https://res.cloudinary.com/dkdvehyzk/image/upload/v1720457075/topshoesLogo_xi5ukb.png" alt="" />
         <NavbarLinksContainer>
           <NavbarLinks className={openMenu ? 'active' : ''}>
@@ -35,9 +37,10 @@ function Navbar() {
           </NavbarLinks>
                       
           <CartNavStyled >
-            <CartIcon/>             
+            <CartIcon/> 
+                     
           </CartNavStyled>
-
+           <ModalCart openCart={openCart} toggleCart={toggleCart}/>  
          
           
 

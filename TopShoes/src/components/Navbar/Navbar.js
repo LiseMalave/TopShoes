@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 import { motion } from "framer-motion";
 
 export const NavbarContainer = styled.div`
@@ -158,6 +158,11 @@ export const ModalOverlayStyled = styled(motion.div)`
   z-index: 50;
   width: calc(100vw - 450px);
   height: 100vh;
+  ${({ isHidden }) =>
+    !isHidden &&
+    css`
+      backdrop-filter: blur(4px);
+    `}
 
  
 `;
