@@ -126,5 +126,48 @@ cursor: pointer;
 
 
 `
+//para el cart
+export const CartNavStyled = styled.div`
+  position: relative;
+  cursor: pointer;
+
+  span {
+    position: absolute;
+    top: 2px;
+    left:25px;
+    
+
+    height: 20px;
+    width: 20px;
+    text-align: center;
+
+    border-radius: 1rem;
+    border: 2px solid white;
+    color: black;
+    background-color: bisque;
+    font-size: 0.9rem;
+  }
+`;
+
+export const LinksContainerStyled = styled.div`
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+
+  a {
+    padding: 1rem 1.5rem;
+  }
+
+  a:first-child {
+    background: var(--orange-bg);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+`;
 
 

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { NavbarContainer, NavbarLinks, NavbarLinksContainer } from "./Navbar";
+import { CartNavStyled, NavbarContainer, NavbarLinks, NavbarLinksContainer } from "./Navbar";
 import { Link, Outlet } from "react-router-dom";
 import { useContext } from "react";
 import { MenuContext } from "../context/ContextMenu";
@@ -8,18 +8,14 @@ import { MenuContext } from "../context/ContextMenu";
 import BurgerButton from "./BurgerButton";
 import Cart from "./Cart.jsx";
 import { CartContext } from "../context/ContextCart";
+import CartIcon from "./CartIcon/CartIcon.jsx";
 
 
 
 function Navbar() {
   const {openMenu, toggleMenu} = useContext(MenuContext);
-  const {openCart, toggleCart } = useContext(CartContext);
-  console.log(openCart)
-  const isOpen = () => {
-    if(openCart=== 'active'){
-      
-    }
-  }
+
+ 
   return (
     <div>
     <nav>
@@ -34,16 +30,14 @@ function Navbar() {
             
 
           </NavbarLinks>
-          <div className={openCart ? 'active' : ''} >
-            
-          <Cart  openCart={openCart} toggleCart={toggleCart}>
-            
-             
-          </Cart>
+                      
+          <CartNavStyled >
+            <CartIcon/>             
+          </CartNavStyled>
 
          
           
-          </div>
+
         </NavbarLinksContainer>
         <div className="toggleBurger">
         <BurgerButton openMenu={openMenu} toggleMenu={toggleMenu}/>
