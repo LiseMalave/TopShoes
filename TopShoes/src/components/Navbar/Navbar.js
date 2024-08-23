@@ -95,11 +95,35 @@ display: none;
 
 `
 
+
+//para el cart
+export const CartNavStyled = styled.div`
+  position: relative;
+  cursor: pointer;
+
+  span {
+    position: absolute;
+    top: 2px;
+    left:25px;
+    
+
+    height: 20px;
+    width: 20px;
+    text-align: center;
+
+    border-radius: 1rem;
+    border: 2px solid white;
+    color: black;
+    background-color: bisque;
+    font-size: 0.9rem;
+  }
+`;
 export const CartButton = styled.button`
 background-color: transparent;
 border: none;
 border-radius: 60%;
 cursor: pointer;
+
 &.active{
   position: absolute;
     display: flex;
@@ -126,28 +150,6 @@ cursor: pointer;
 
 
 `
-//para el cart
-export const CartNavStyled = styled.div`
-  position: relative;
-  cursor: pointer;
-
-  span {
-    position: absolute;
-    top: 2px;
-    left:25px;
-    
-
-    height: 20px;
-    width: 20px;
-    text-align: center;
-
-    border-radius: 1rem;
-    border: 2px solid white;
-    color: black;
-    background-color: bisque;
-    font-size: 0.9rem;
-  }
-`;
 
 export const LinksContainerStyled = styled.div`
   color: white;

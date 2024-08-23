@@ -9,6 +9,7 @@ import BurgerButton from "./BurgerButton";
 import Cart from "./Cart.jsx";
 import { CartContext } from "../context/ContextCart";
 import CartIcon from "./CartIcon/CartIcon.jsx";
+import ModalCart from "./ModalCart/ModalCart.jsx";
 
 
 
@@ -19,7 +20,9 @@ function Navbar() {
   return (
     <div>
     <nav>
+     
       <NavbarContainer>
+         <ModalCart/>
         <img src="https://res.cloudinary.com/dkdvehyzk/image/upload/v1720457075/topshoesLogo_xi5ukb.png" alt="" />
         <NavbarLinksContainer>
           <NavbarLinks className={openMenu ? 'active' : ''}>
